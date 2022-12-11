@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>SM_Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="images/soom.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <style>
+        	@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+
+			.hana_font{
+				font-family: 'Jeju Gothic', sans-serif;
+			}
+			
+			.skills_form{
+				border-radius:15px;
+				box-shadow: 2px 2px 2px;
+				background-color:white;
+			}
+			
+			.containerr {
+			  position: relative;
+			}
+			
+			/* Hide the images by default */
+			.mySlides {
+			  display: none;
+			}
+			
+			/* Add a pointer when hovering over the thumbnail images */
+			.cursor {
+			  cursor: pointer;
+			}
+			
+			/* Next & previous buttons */
+			.prev,
+			.next {
+			  cursor: pointer;
+			  position: absolute;
+			  top: 40%;
+			  width: auto;
+			  padding: 16px;
+			  margin-top: -50px;
+			  color: white;
+			  font-weight: bold;
+			  font-size: 20px;
+			  border-radius: 0 3px 3px 0;
+			  user-select: none;
+			  -webkit-user-select: none;
+			}
+			
+			/* Position the "next button" to the right */
+			.next {
+			  right: 0;
+			  border-radius: 3px 0 0 3px;
+			}
+			
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+			  background-color: rgba(0, 0, 0, 0.8);
+			}
+			
+			/* Number text (1/3 etc) */
+			.numbertext {
+			  color: #f2f2f2;
+			  font-size: 12px;
+			  padding: 8px 12px;
+			  position: absolute;
+			  top: 0;
+			}
+			
+			/* Container for image text */
+			.caption-container {
+			  text-align: center;
+			  background-color: #222;
+			  padding: 2px 16px;
+			  color: white;
+			}
+			
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			/* Six columns side by side */
+			.column {
+			  float: left;
+			  width: 16.66%;
+			}
+			
+			/* Add a transparency effect for thumnbail images */
+			.demo, .demo2, .demo3, .demo4, .demo5 {
+			  opacity: 0.6;
+			}
+			
+			
+			.active,
+			.demo:hover {
+			  opacity: 1;
+			}
+
+			.demo2:hover, .demo2:hover, .demo4:hover, .demo5:hover {
+			  opacity: 1;
+			}
+        </style>
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index:1; position: fixed;top: 0;left: 0;right: 0;">
+            <div class="container">
+                <a class="navbar-brand" href="#">SOOMIN's Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section_AM">ABOUT ME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section_SK">SKILLS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section_PR">PROJECTS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#section_AR">ARCHIVING</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" style="background-image:url('images/code.png'); background-attachment:fixed;">
+            <div class="text-center my-5">
+                <img class="img-fluid rounded-circle mb-4" src="images/soom.png" alt="..." style="width:200px; height:200px;" />
+                <h1 class="text-white fw-bolder hana_font" style="font-size:30px;">"지&nbsp;&nbsp;수&nbsp;&nbsp;민"<br>포&nbsp;&nbsp;트&nbsp;&nbsp;폴&nbsp;&nbsp;리&nbsp;&nbsp;오</h1>
+                <p class="mb-0" style="font-size:22px;--bs-text-opacity: 1; color: rgba(255, 255, 255, 0.7); letter-spacing:2px">STEADY STUDY, DEVELOPING KNOWLEDGE</p><br>
+                <p class="text-white-50 mb-0" style="font-size:19px;">안녕하세요, 좋은 개발자를 위해 노력하는 개발자입니다.<br>꼼꼼하고 맡은 바 강한 책임감을 갖는 성격이 장점입니다.</p>
+            	<br>
+            	<input type="button" value="자세히 보기 ↓" onclick = "location.href = '#section_AM'" style="width: 180px; height:45px; border-radius:20px; background-color:#868e96; border:none; outline:none; color:white "/>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section id="section_AM" class="py-5">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2>ABOUT ME</h2>
+                        <div style="display:flex;width:966px;">
+	                        <img src="images/sm.jpg" style="width:300px; float:left;"/>
+	                        <div style="float:left; flex:1; margin-left:15px;">
+	                        	<div style="width:100%; height:70px; margin-top:97px;">
+	                        		<button type="button" style="float:left; width: 70px; height:70px; border-radius:50px; background-color:rgb(128, 64, 64); border:none; outline:none; color:white "><img style="width:30px;" src="images/user_icon.png"></button>
+		            				<div style="line-height: 35px; float:left; height:70px; margin-left:10px;"><label><b>N A M E</b></label><p style="margin:0px;">지수민</p></div>
+		            				<button type="button" style="margin-left:270px; float:left; width: 70px; height:70px; border-radius:50px; background-color:rgb(0, 128, 128); border:none; outline:none; color:white "><img style="width:30px;" src="images/marker_icon.png"></button>
+		            				<div style="line-height: 35px; float:left; height:70px; margin-left:10px;"><label><b>A D D R E S S</b></label><p style="margin:0px;">경기도 남양주시</p></div>
+	                        	</div>
+		                        
+		            			
+		            			<div style="width: 100%; height:70px; margin-top:51.7px;">
+		            				<button type="button" style="float:left; width: 70px; height:70px; border-radius:50px; background-color:rgb(0, 128, 0); border:none; outline:none; color:white "><img style="width:30px;" src="images/mail_icon.png"></button>
+		            				<div style="line-height: 35px; float:left; height:70px; margin-left:10px;"><label><b>E - M A I L</b></label><p style="margin:0px;">min980731@naver.com</p></div>
+		            				<button type="button" style="margin-left:166px; float:left; width: 70px; height:70px; border-radius:50px; background-color:rgb(0,128, 255); border:none; outline:none; color:white "><img style="width:30px;" src="images/pencil.png"></button>
+		            				<div style="line-height: 35px; float:left; height:70px; margin-left:10px;"><label><b>E D U C A T I O N</b></label><p style="margin:0px;">명지전문대(전공심화)<br>인터넷보안공학과</p></div>
+		            			
+		            			</div>
+		            			
+	                        </div>
+	            			
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image element - set the background image for the header in the line below-->
+        <section id="section_SK" class="py-5" style=" background-color:#678dab;">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2>SKILLS</h2>
+                        <div style="width:966px; height:1000px;">
+                        	<div  style="width:966px; height:680px;">
+                        		<div style="float:left;">
+                        			<div class="skills_form"style=" width:473px; height:415px; padding:18px;">
+			                        	<h2><b>FRONTEND</b></h2>
+			                        	<hr>
+			                        	<br>
+			                        	<div style="text-align: center;">
+			                        		<img src="images/html.png" style="width:105px;">
+			                        		<img src="images/css.png" style="width:105px;">
+			                        		<img src="images/js.png" style="width:105px;">
+			                        		<img src="images/xml.png" style="width:105px;">
+			                        	</div>
+			                        	<hr>
+			                        	
+			                        	<div style="text-align: center;">
+			                        		<p style="width:109.25px;float:left; font-size:22px;">HTML5</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">CSS3</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">JS</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">XML</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+			                        	<div style="text-align: center;">
+			                        		<p style="width:109.25px;float:left; font-size:22px;">중</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">중</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">중</p>
+			                        		<p style="width:109.25px;float:left; font-size:22px;">중상</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+		                        	</div>
+		                        	
+		                        	<div class="skills_form"style="margin-top:10px; width:473px; height:235px;padding:18px;">
+		                        		<h2><b>MOBILE APP</b></h2>
+			                        	<hr style="margin-top:4px;">
+			                        	
+			                        	<div style="text-align: center;">
+			                        		<img src="images/and.png" style="width:120px;float:left;">
+			                        		<div style="width:317px; padding-left:10px;float:left;">
+			                        			<hr style="clear:left; margin-top:4px;">
+			                        			<p style="width:317px;float:left; font-size:22px;">ANDROID STUDIO</p>
+			                        			
+			                        			<hr style="clear:left; ">
+			                        			<p style="width:317px;float:left; font-size:22px;">중상</p>
+			                        			<hr style="clear:left;  margin:4px;">
+			                        		</div>
+			                        		
+			                        	</div>
+			                        	
+		                        	</div>
+                        		</div>
+	                        	
+	                        	<div class="skills_form"style="margin-left:20px; float:left; width:473px; height:660px;padding:18px">
+	                        		<h2><b>BACKEND</b></h2>
+			                        	<hr>
+			                        	<div style="text-align: center;">
+			                        		<img src="images/java.png" style="width:140px;">
+			                        		<img src="images/C.png" style="width:140px;">
+			                        		<img src="images/C++.png" style="width:140px;">
+			                        	</div>
+			                        	<hr>
+			                        	
+			                        	<div style="text-align: center;">
+			                        		<p style="width:145.5px;float:left; font-size:22px;">JAVA</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">C</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">C++</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+			                        	<div style="text-align: center;">
+			                        		<p style="width:145.5px;float:left; font-size:22px;">중상</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">중</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">하</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+			                        	<div style="text-align: center;">
+			                        		<img src="images/php.png" style="width:140px;">
+			                        		<img src="images/mysql.png" style="width:140px;">
+			                        		<img src="images/python.png" style="width:140px;">
+			                        	</div>
+			                        	<hr>
+			                        	
+			                        	<div style="text-align: center;">
+			                        		<p style="width:145.5px;float:left; font-size:22px;">PHP</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">MySQL</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">PYTHON</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+			                        	<div style="text-align: center;">
+			                        		<p style="width:145.5px;float:left; font-size:22px;">하</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">중</p>
+			                        		<p style="width:145.5px;float:left; font-size:22px;">중</p>
+			                        	</div>
+			                        	<hr style="clear:left;">
+	                        	</div>
+	                        </div>
+	                        <div style=" width:966px; height:320px;">
+	                        	<div class="skills_form" style="float:left; width:312px; height:320px; padding:10px">
+	                        		<h2 style="font-size:30px;"><b>PLATFORM</b></h2>
+			                        <hr>
+			                        <img src="images/firebase.png" style="width:200px; margin-left:-30px;">
+			                        <img src="images/navercloudplatform.png" style="width:200px;">
+	                        	</div>
+	                        	<div class="skills_form" style="margin-left:15px; float:left; width:312px; height:320px;padding:10px">
+	                        		<h2 style="font-size:30px;"><b>VERSION CONTROL</b></h2>
+			                        <hr>
+			                        <br>
+			                        <img src="images/git.png" style="width:150px;">
+			                        <img src="images/github.jpeg" style="width:200px; margin-left:-10px;">
+	                        	</div>
+	                        	<div class="skills_form" style="margin-left:15px; float:left; width:312px; height:320px;padding:10px">
+	                        		<h2 style="font-size:30px;"><b>COMMUNICATION</b></h2>
+			                        <hr>
+			                        <img src="images/zoom.jpg" style="width:200px;">
+			                        <img src="images/slack.png" style="width:200px;">
+	                        	</div>
+	                        </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content section-->
+        <section id="section_PR" class="py-5" style=" background-color:#242B3F;">
+            <div class="container my-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <h2 style="color:white">PROJECTS</h2>
+                        <div class="skills_form" style="width:966px; height:700px; padding:20px;">
+                        	<div>
+                        		<h2>INTRODUCING MYSELF</h2>
+                        		<p>2019. 05 - 2019. 06</p>
+                        	</div>
+                        	<div class="containerr" style="width:455px; height:575px; background-color:gray; float:left;">
+	                        	<div style="transform:translate(0%, 166px)">
+	                        		<div class="mySlides"  >
+									    <div class="numbertext">1 / 5</div>
+									    <img src="images/project1-1.png" style="width:100%;">
+									  </div>
+									
+									  <div class="mySlides">
+									    <div class="numbertext">2 / 5</div>
+									    <img src="images/project1-2.png" style="width:100%">
+									  </div>
+									
+									  <div class="mySlides">
+									    <div class="numbertext">3 / 5</div>
+									    <img src="images/project1-3.png" style="width:100%">
+									  </div>
+									    
+									  <div class="mySlides">
+									    <div class="numbertext">4 / 5</div>
+									    <img src="images/project1-4.png" style="width:100%">
+									  </div>
+									
+									  <div class="mySlides">
+									    <div class="numbertext">5 / 5</div>
+									    <img src="images/project1-5.png" style="width:100%">
+									  </div>
+									    
+									  
+									    
+									  <a class="prev" onclick="plusSlides(-1)">❮</a>
+									  <a class="next" onclick="plusSlides(1)">❯</a>
+									
+									  
+									
+									  <div class="row">
+									    <div class="column">
+									      <img class="demo cursor" src="images/project1-1.png" style="width:100%" onclick="currentSlide(1)">
+									    </div>
+									    <div class="column">
+									      <img class="demo cursor" src="images/project1-2.png" style="width:100%" onclick="currentSlide(2)">
+									    </div>
+									    <div class="column">
+									      <img class="demo cursor" src="images/project1-3.png" style="width:100%" onclick="currentSlide(3)">
+									    </div>
+									    <div class="column">
+									      <img class="demo cursor" src="images/project1-4.png" style="width:100%" onclick="currentSlide(4)">
+									    </div>
+									    <div class="column">
+									      <img class="demo cursor" src="images/project1-5.png" style="width:100%" onclick="currentSlide(5)">
+									    </div> 
+	                        		</div>
+							  
+							  </div>
+							</div>
+							<div style="float:left; width:455px;margin-left:16px;">
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> 나를 소개하는 페이지
+								<br><b>- 팀원수 :</b> 1명
+								<br><b>- 소요시간 :</b> 3주
+								<br><b>- 사용언어 :</b> HTML/CSS
+								<br><b>- GitHub :</b> https://github.com/Chisoomin/etc/tree/main/.github/workflows</p>
+								<hr>
+								<p>
+									저에 대한 간략한 소개와 좋아하는 영화나 가수 등이 이미지와 함께 설명되어 있습니다. 또한 가족에 대한 인물 소개와 그에 상응하는 이미지 파일이 보여집니다.<br><br>
+									페이지의 왼쪽에는 메뉴바와 같이 개발하였고, 사진을 디자인하여 커버사진처럼 표현해 놓았습니다. 페이지의 마지막에는 라디오버튼과 셀렉트박스, 서밋버튼으로 퀴즈 문제를 구현해 놓았습니다. HTML과 같은 Frontend 개발 언어로 만들 수 있는 간단한 페이지입니다.<br><br>
+									처음 진행을 하며 생각했던 것을 구현하려고 노력하고, 결국 완성했다는 것에 큰 의미가 있는 프로젝트였습니다
+								</p>
+								<button onclick = "location.href = 'https://github.com/Chisoomin/etc/blob/main/README.md'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
+							</div>
+                        </div>
+                        
+                        
+                        <div class="skills_form" style="width:966px; height:850px; margin-top:20px; padding:20px">
+                        	<div>
+                        		<h2>FOR 곰신</h2>
+                        		<p>2020. 11 - 2020. 12</p>
+                        	</div>
+                        	<div class="containerr" style="width:455px; height:725px; background-color:gray; float:left;overflow:scroll">
+	                        	<div >
+	                        		<div style="transform:translate(68px, 0%)">
+	                        		  <div class="mySlides3" >
+									    <div class="numbertext">1 / 8</div>
+									    <img src="images/project2-1.png" style="width:70%;">
+									  </div>
+									
+									  <div class="mySlides3">
+									    <div class="numbertext">2 / 8</div>
+									    <img src="images/project2-2.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides3">
+									    <div class="numbertext">3 / 8</div>
+									    <img src="images/project2-3.png" style="width:70%">
+									  </div>
+									    
+									  <div class="mySlides3">
+									    <div class="numbertext">4 / 8</div>
+									    <img src="images/project2-8.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides3">
+									    <div class="numbertext">2 / 8</div>
+									    <img src="images/project2-4.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides3">
+									    <div class="numbertext">6 / 8</div>
+									    <img src="images/project2-5.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides3">
+									    <div class="numbertext">7 / 8</div>
+									    <img src="images/project2-6.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides3">
+									    <div class="numbertext">8 / 8</div>
+									    <img src="images/project2-7.png" style="width:70%">
+									  </div>
+									</div>
+									  
+									  
+									    
+									  <a class="prev" onclick="plusSlides3(-1)">❮</a>
+									  <a class="next" onclick="plusSlides3(1)">❯</a>
+									
+									  
+									
+									  <div class="row">
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-1.png" style="width:100%" onclick="currentSlide3(1)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-2.png" style="width:100%" onclick="currentSlide3(2)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-3.png" style="width:100%" onclick="currentSlide3(3)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-8.png" style="width:100%" onclick="currentSlide3(4)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-4.png" style="width:100%" onclick="currentSlide3(5)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-5.png" style="width:100%" onclick="currentSlide3(6)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-6.png" style="width:100%" onclick="currentSlide3(7)">
+									    </div>
+									    <div class="column">
+									      <img class="demo3 cursor" src="images/project2-7.png" style="width:100%" onclick="currentSlide3(8)">
+									    </div>
+									    
+									     
+	                        		</div>
+							  
+							  </div>
+							</div>
+							<div style="float:left; width:455px;margin-left:16px;">
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> 복무 형태에 따른 전역일 계산, 계급 확인, 계급마다 특징 설명, 다이어리 작성 및 확인
+								<br><b>- 팀원수 :</b> 1명
+								<br><b>- 소요시간 :</b> 1개월
+								<br><b>- 사용언어 :</b> JAVA, XML, SQL
+								<br><b>- GitHub :</b> https://github.com/Chisoomin/forGomsin
+								<br><b>- 시연영상 :</b> https://www.youtube.com/watch?v=yQX46FcQM2c</p>
+								<hr>
+								<p>
+									주변에 군대 간 남자친구를 둔 친구들, 즉 고무신들이 많아지면서 전역일 계산에 어려움을 토로하는 사람들이 여럿이 있었기 때문에 개발을 생각하게 되었습니다.<br><br>
+									주요 기능은 날짜 계산과 다이어리 작성입니다. 사귄 날짜를 계산하여 기념일을 한눈에 알아볼 수 있고, 군인 애인의 복무 형태와 입대일을 활용하여 전역일을 계산할 수 있습니다. 그리고 간단한 다이어리를 작성하고 다시 읽어볼 수 있습니다. 또한 계급 확인이 가능하며 계급별 정보들을 재미있게 정리한 앱입니다.<br><br>
+									제가 실제 사용자라고 생각하고 사용하기 편하도록 다양한 위젯과 XML 코드를 활용해 UI에 많은 신경을 썼고, Java 코드와 SQLite를 활용하여 Backend 부분을 구현해 냈다는 것에 많은 의의가 있는 프로젝트입니다.
+								</p>
+								<button onclick = "location.href = 'https://github.com/Chisoomin/forGomsin/blob/master/README.md'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
+							</div>
+                        </div>
+                        
+                        
+                        
+                     
+                        <div class="skills_form" style="width:966px; height:850px; margin-top:20px; padding:20px;">
+                        	<div>
+                        		<h2>도담도담(DoDaM-DoDaM)</h2>
+                        		<p>2021. 03 - 2021. 11</p>
+                        	</div>
+                        	<div class="containerr" style="width:455px; height:725px; background-color:gray; float:left;overflow:scroll">
+	                        	<div >
+	                        		<div style="transform:translate(68px, 0%)">
+	                        		  <div class="mySlides4" >
+									    <div class="numbertext">1 / 18</div>
+									    <img src="images/project3-0.jpg" style="width:70%;">
+									  </div>
+									
+									  <div class="mySlides4">
+									    <div class="numbertext">2 / 18</div>
+									    <img src="images/project3-1.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">3 / 18</div>
+									    <img src="images/project3-2.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides4">
+									    <div class="numbertext">4 / 18</div>
+									    <img src="images/project3-3.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">5 / 18</div>
+									    <img src="images/project3-4.png" style="width:70%">
+									  </div>
+									    
+									  <div class="mySlides4">
+									    <div class="numbertext">6 / 18</div>
+									    <img src="images/project3-5.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides4">
+									    <div class="numbertext">7 / 18</div>
+									    <img src="images/project3-6.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">8 / 18</div>
+									    <img src="images/project3-7.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">9 / 18</div>
+									    <img src="images/project3-8.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">10 / 18</div>
+									    <img src="images/project3-9.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">11 / 18</div>
+									    <img src="images/project3-10.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">12 / 18</div>
+									    <img src="images/project3-11.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">13 / 18</div>
+									    <img src="images/project3-12.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">14 / 18</div>
+									    <img src="images/project3-13.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides4">
+									    <div class="numbertext">15 / 18</div>
+									    <img src="images/project3-14.png" style="width:70%">
+									  </div>
+									  <div class="mySlides4">
+									    <div class="numbertext">16 / 18</div>
+									    <img src="images/project3-15.png" style="width:70%">
+									  </div>
+									  <div class="mySlides4">
+									    <div class="numbertext">17 / 18</div>
+									    <img src="images/project3-16.png" style="width:70%">
+									  </div>
+									  <div class="mySlides4">
+									    <div class="numbertext">18 / 18</div>
+									    <img src="images/project3-17.png" style="width:70%">
+									  </div>
+									</div>
+									  
+									  
+									    
+									  <a class="prev" onclick="plusSlides4(-1)">❮</a>
+									  <a class="next" onclick="plusSlides4(1)">❯</a>
+									
+									  
+									
+									  <div class="row">
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-0.jpg" style="width:100%" onclick="currentSlide4(1)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-1.png" style="width:100%" onclick="currentSlide4(2)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-2.png" style="width:100%" onclick="currentSlide4(3)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-3.png" style="width:100%" onclick="currentSlide4(4)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-4.png" style="width:100%" onclick="currentSlide4(5)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-5.png" style="width:100%" onclick="currentSlide4(6)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-6.png" style="width:100%" onclick="currentSlide4(7)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-7.png" style="width:100%" onclick="currentSlide4(8)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-7.png" style="width:100%" onclick="currentSlide4(8)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-8.png" style="width:100%" onclick="currentSlide4(9)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-9.png" style="width:100%" onclick="currentSlide4(10)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-10.png" style="width:100%" onclick="currentSlide4(11)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-11.png" style="width:100%" onclick="currentSlide4(12)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-12.png" style="width:100%" onclick="currentSlide4(13)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-13.png" style="width:100%" onclick="currentSlide4(14)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-14.png" style="width:100%" onclick="currentSlide4(15)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-15.png" style="width:100%" onclick="currentSlide4(16)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-16.png" style="width:100%" onclick="currentSlide4(17)">
+									    </div>
+									    <div class="column">
+									      <img class="demo4 cursor" src="images/project3-17.png" style="width:100%" onclick="currentSlide4(18)">
+									    </div>
+									    
+									     
+	                        		</div>
+							  
+							  </div>
+							</div>
+							<div style="float:left; width:455px; height:725px;margin-left:16px;overflow:scroll">
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> 인공지능(AI)과 빅데이터를 활용한 심리를 파악, 감정에 따른 음악 목록을 추천, 식물의 성장으로 사용자의 성장 확인, 미니 게임
+								<br><b>- 팀원수 :</b> 5명 → 3명
+								<br><b>- 소요시간 :</b> 8개월
+								<br><b>- 사용언어 :</b> JAVA, XML, SQL
+								<br><b>- GitHub :</b> https://github.com/Chisoomin/DoDam
+								<br><b>- 시연영상 :</b> https://www.youtube.com/watch?v=4pgAIYISrI4</p>
+								<hr>
+								<p>
+									코로나 블루 등으로 최근 계속해서 높아지는 우울감을 낮추기 위해 심리 상태를 진단하고 치유하며, 내면의 부정적인 면과 스트레스의 해소가 필요하므로 이를 해결하기 위해 개발하게 되었습니다.<br><br>
+									주요 기능으로 인공지능과 데이터를 활용해 사용자의 심리 상태를 진단하고, 긍정적인 습관을 길러 자존감을 높일 수 있는 Habit Tracker가 있습니다. 그리고 감정의 정리를 돕는 감정 캘린더와 다이어리 기능이 있고, 다이어리에 입력한 감정에 따른 음악 추천 기능으로 감정을 다독일 수 있습니다. 콘텐츠 사용을 통해 포인트를 모아 식물을 길러 자신의 성장을 가시적으로 확인할 수 있습니다. 미니게임을 통해 감정 해소를 하고 인공지능으로 분석한 결과를 그래프로 확인 가능합니다. 이러한 기능을 통해 자발적이며 꾸준히 접근할 수 있는 “심리 치유” 앱입니다.<br><br>
+									첫 장기 프로젝트로 XML 코드로 Frontend를 구성하고 Java 코드로 위젯의 기능을 구현하였으며 SQLite로 LocalDB를 JDBC로 ServerDB를 개발하였습니다. 네이버 클라우드 플렛폼과 firebase를 활용하여 사용자에게 여러 기능을 제공할 수 있도록 만든 프로젝트입니다.
+								</p>
+								<button onclick = "location.href = 'https://github.com/Chisoomin/DoDaM-DoDaM/blob/DoDaM_ver3/README.md'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
+							</div>
+                        </div>
+                        
+                        
+                        <div class="skills_form" style="width:966px; height:850px; margin-top:20px; padding:20px;">
+                        	<div>
+                        		<h2>MY REVIEWs</h2>
+                        		<p>2021. 11 - 2021. 12</p>
+                        	</div>
+                        	<div class="containerr" style="width:455px; height:725px; background-color:gray; float:left;overflow:scroll">
+	                        	<div >
+	                        		<div style="transform:translate(68px, 0%)">
+	                        		  <div class="mySlides5" >
+									    <div class="numbertext">1 / 15</div>
+									    <img src="images/project4-1.png" style="width:70%;">
+									  </div>
+									
+									  <div class="mySlides5">
+									    <div class="numbertext">2 / 15</div>
+									    <img src="images/project4-2.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">3 / 15</div>
+									    <img src="images/project4-3.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides5">
+									    <div class="numbertext">4 / 15</div>
+									    <img src="images/project4-3-1.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">5 / 15</div>
+									    <img src="images/project4-4.png" style="width:70%">
+									  </div>
+									    
+									  <div class="mySlides5">
+									    <div class="numbertext">6 / 15</div>
+									    <img src="images/project4-5.png" style="width:70%">
+									  </div>
+									
+									  <div class="mySlides5">
+									    <div class="numbertext">7 / 15</div>
+									    <img src="images/project4-6.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">8 / 15</div>
+									    <img src="images/project4-7.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">9 / 15</div>
+									    <img src="images/project4-8.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">10 / 15</div>
+									    <img src="images/project4-9.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">11 / 15</div>
+									    <img src="images/project4-10.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">12 / 15</div>
+									    <img src="images/project4-11.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">13 / 15</div>
+									    <img src="images/project4-12.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">14 / 15</div>
+									    <img src="images/project4-13.png" style="width:70%">
+									  </div>
+									  
+									  <div class="mySlides5">
+									    <div class="numbertext">15 / 15</div>
+									    <img src="images/project4-14.png" style="width:70%">
+									  </div>
+									  
+									</div>
+									  
+									  
+									    
+									  <a class="prev" onclick="plusSlides5(-1)">❮</a>
+									  <a class="next" onclick="plusSlides5(1)">❯</a>
+									
+									  
+									
+									  <div class="row">
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-1.png" style="width:100%" onclick="currentSlide5(1)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-2.png" style="width:100%" onclick="currentSlide5(2)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-3.png" style="width:100%" onclick="currentSlide5(3)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-3-1.png" style="width:100%" onclick="currentSlide5(4)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-4.png" style="width:100%" onclick="currentSlide5(5)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-5.png" style="width:100%" onclick="currentSlide5(6)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-6.png" style="width:100%" onclick="currentSlide5(7)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-7.png" style="width:100%" onclick="currentSlide5(8)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-8.png" style="width:100%" onclick="currentSlide5(9)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-9.png" style="width:100%" onclick="currentSlide5(10)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-10.png" style="width:100%" onclick="currentSlide5(11)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-11.png" style="width:100%" onclick="currentSlide5(12)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-12.png" style="width:100%" onclick="currentSlide5(13)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-13.png" style="width:100%" onclick="currentSlide5(14)">
+									    </div>
+									    <div class="column">
+									      <img class="demo5 cursor" src="images/project4-14.png" style="width:100%" onclick="currentSlide5(15)">
+									    </div>
+									    
+									    
+									    
+									     
+	                        		</div>
+							  
+							  </div>
+							</div>
+							<div style="float:left; width:455px; height:725px;margin-left:16px; overflow:scroll">
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> 네이버 검색 api를 활용한 영화 검색, 영화 즐겨찾기, 영화에 대한 평론 작성 및 확인, 영화 추천
+								<br><b>- 팀원수 :</b> 1명
+								<br><b>- 소요시간 :</b> 1개월
+								<br><b>- 사용언어 :</b> JAVA, SQL, XML
+								<br><b>- GitHub :</b> https://github.com/Chisoomin/MY_REVIEWs
+								<br><b>- 시연영상 :</b> https://www.youtube.com/watch?v=4pVXTngfQ2s
+								</p>
+								<hr>
+								<p>
+									오징어 게임의 흥행으로 전 세계적인 인기를 끌면서 우리나라의 OTT 열풍은 지속될 것으로 보입니다. 이처럼 영화나 드라마 등의 콘텐츠가 넘쳐나는 상황에서 사용자가 본 영화의 개인적인 평가를 하고 좋은 작품을 기억할 수 있는 앱을 개발하였습니다.<br><br>
+									네이버 검색 api를 활용하여 쉽게 영화를 검색할 수 있고, 찾은 영화에 좋아요 버튼을 누를 수 있습니다. 또한 좋아요 버튼이 눌린 영화를 따로 모여 나의 즐겨찾기에 추가됩니다. 좋아하는 영화를 한눈에 확인, 관리할 수 있습니다. 시청한 영화에 대한 평론을 남길 수도 있습니다. 해당 영화를 선택 후, 제목과 감상평이나 평론 내용, 감상일, 함께 본 사람, 별점을 입력하여 평론을 작성 및 확인할 수 있습니다. 마이페이지를 보면 자신의 정보와 추천 영화를 볼 수 있습니다.<br><br>
+									실제 스마트폰으로 프로젝트를 실행시켜보고 디버깅하여 최대한 오류가 나지 않고 실행되도록 하였습니다. API와 callback 함수를 이용하여 앱을 만드는 것을 경험한 프로젝트였습니다.
+								</p>
+								<button onclick = "location.href = 'https://github.com/Chisoomin/MY_REVIEWs/blob/master/README.md'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
+							</div>
+						</div>
+						
+						
+						
+                        <div class="skills_form" style="width:966px; height:700px; margin-top:20px; padding:20px;">
+                        	<div>
+                        		<h2>ERP business management</h2>
+                        		<p>2022. 09 - 2022. 12</p>
+                        	</div>
+                        	<div class="containerr" style="width:455px; height:575px; background-color:gray; float:left;">
+	                        	<div style="transform:translate(0%, 166px)">
+	                        		  <div class="mySlides2" >
+									    <div class="numbertext">1 / 9</div>
+									    <img src="images/project5-1.png" style="width:100%;">
+									  </div>
+									
+									  <div class="mySlides2">
+									    <div class="numbertext">2 / 9</div>
+									    <img src="images/project5-2.png" style="width:100%">
+									  </div>
+									
+									  <div class="mySlides2">
+									    <div class="numbertext">3 / 9</div>
+									    <img src="images/project5-3.png" style="width:100%">
+									  </div>
+									    
+									  <div class="mySlides2">
+									    <div class="numbertext">4 / 9</div>
+									    <img src="images/project5-4.png" style="width:100%">
+									  </div>
+									
+									  <div class="mySlides2">
+									    <div class="numbertext">5 / 9</div>
+									    <img src="images/project5-5.png" style="width:100%">
+									  </div>
+									  
+									  <div class="mySlides2">
+									    <div class="numbertext">6 / 9</div>
+									    <img src="images/project5-6.png" style="width:100%">
+									  </div>
+									  
+									  <div class="mySlides2">
+									    <div class="numbertext">7 / 9</div>
+									    <img src="images/project5-7.png" style="width:100%">
+									  </div>
+									  
+									  <div class="mySlides2">
+									    <div class="numbertext">8 / 9</div>
+									    <img src="images/project5-8.png" style="width:100%">
+									  </div>
+									  
+									  <div class="mySlides2">
+									    <div class="numbertext">9 / 9</div>
+									    <img src="images/project5-9.png" style="width:100%">
+									  </div>
+									  
+									    
+									  <a class="prev" onclick="plusSlides2(-1)">❮</a>
+									  <a class="next" onclick="plusSlides2(1)">❯</a>
+									
+									  
+									
+									  <div class="row">
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-1.png" style="width:100%" onclick="currentSlide2(1)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-2.png" style="width:100%" onclick="currentSlide2(2)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-3.png" style="width:100%" onclick="currentSlide2(3)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-4.png" style="width:100%" onclick="currentSlide2(4)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-5.png" style="width:100%" onclick="currentSlide2(5)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-6.png" style="width:100%" onclick="currentSlide2(6)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-7.png" style="width:100%" onclick="currentSlide2(7)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-8.png" style="width:100%" onclick="currentSlide2(8)">
+									    </div>
+									    <div class="column">
+									      <img class="demo2 cursor" src="images/project5-9.png" style="width:100%" onclick="currentSlide2(9)">
+									    </div>
+									     
+	                        		</div>
+							  
+							  </div>
+							</div>
+							<div style="float:left; width:455px;margin-left:16px;">
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> ERP 영업관리 프로세스
+								<br><b>- 팀원수 :</b> 5명
+								<br><b>- 소요시간 :</b> 4개월
+								<br><b>- 사용언어 :</b> JAVA, SQL, HTML/CSS, JS
+								<br><b>- GitHub :</b> https://github.com/Chisoomin/MJF_ERP</p>
+								<hr>
+								<p>
+									ERP는 enterprise resource planning의 약어로 경영 정보 시스템의 한 종류입니다.<br><br>
+									ERP는 전사적 자원 관리는 회사의 모든 정보 뿐만 아니라, 공급 사슬관리, 고객의 주문정보까지 포함하여 통합적으로 관리하는 시스템입니다.<br><br>
+									그 중에서도 영업관리 프로세스를 맞아 수주 등록부터 매출 관리까지 구현하였습니다. 기업에서 사용하는 경영 시스템을 직접 구현해 보았다는 것에서 가장 의미있는 작업물이었습니다.
+								</p>
+								<button onclick = "location.href = 'https://github.com/Chisoomin/MJF_ERP'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <script>
+	        var slideIndex = 1;
+	        showSlides(slideIndex);
+	
+	        function plusSlides(n) {
+	          showSlides(slideIndex += n);
+	        }
+	
+	        function currentSlide(n) {
+	          showSlides(slideIndex = n);
+	        }
+	
+	        function showSlides(n) {
+	          var i;
+	          var slides = document.getElementsByClassName("mySlides");
+	          var dots = document.getElementsByClassName("demo");
+	          var captionText = document.getElementById("caption");
+	          if (n > slides.length) {
+	        	  
+	        	  slideIndex = 1
+	        	  }
+	          if (n < 1) {slideIndex = slides.length
+	          }
+	          for (i = 0; i < slides.length; i++) {
+	              slides[i].style.display = "none";
+	          }
+	          for (i = 0; i < dots.length; i++) {
+	              dots[i].className = dots[i].className.replace(" active", "");
+	          }
+	          slides[slideIndex-1].style.display = "block";
+	          dots[slideIndex-1].className += " active";
+	          captionText.innerHTML = dots[slideIndex-1].alt;
+	        }
+        </script>
+        <script>
+	        var slideIndex2 = 1;
+	        showSlides2(slideIndex2);
+	
+	        function plusSlides2(n) {
+	          showSlides2(slideIndex2 += n);
+	        }
+	
+	        function currentSlide2(n) {
+	          showSlides2(slideIndex2 = n);
+	        }
+	
+	        function showSlides2(n) {
+	          var i;
+	          var slides2 = document.getElementsByClassName("mySlides2");
+	          var dots2 = document.getElementsByClassName("demo2");
+	          if (n > slides2.length) {
+	        	  	        	  slideIndex2 = 1
+	        	  }
+	          if (n < 1) {
+	        	  slideIndex2 = slides2.length  
+	          }
+	          for (i = 0; i < slides2.length; i++) {
+	              slides2[i].style.display = "none";
+	          }
+	          for (i = 0; i < dots2.length; i++) {
+	              dots2[i].className = dots2[i].className.replace(" active", "");
+	          }
+	          slides2[slideIndex2-1].style.display = "block";
+	          dots2[slideIndex2-1].className += " active";
+	        }
+        </script>
+        <script>
+	        var slideIndex3 = 1;
+	        showSlides3(slideIndex3);
+	
+	        function plusSlides3(n) {
+	          showSlides3(slideIndex3 += n);
+	        }
+	
+	        function currentSlide3(n) {
+	          showSlides3(slideIndex3 = n);
+	        }
+	
+	        function showSlides3(n) {
+	          var i;
+	          var slides3 = document.getElementsByClassName("mySlides3");
+	          var dots3 = document.getElementsByClassName("demo3");
+	          if (n > slides3.length) {
+	        	  	        	  slideIndex3 = 1
+	        	  }
+	          if (n < 1) {
+	        	  slideIndex3 = slides3.length  
+	          }
+	          for (i = 0; i < slides3.length; i++) {
+	              slides3[i].style.display = "none";
+	          }
+	          for (i = 0; i < dots3.length; i++) {
+	              dots3[i].className = dots3[i].className.replace(" active", "");
+	          }
+	          slides3[slideIndex3-1].style.display = "block";
+	          dots3[slideIndex3-1].className += " active";
+	        }
+        </script>
+        <script>
+	        var slideIndex4 = 1;
+	        showSlides4(slideIndex4);
+	
+	        function plusSlides4(n) {
+	          showSlides4(slideIndex4 += n);
+	        }
+	
+	        function currentSlide4(n) {
+	          showSlides4(slideIndex4 = n);
+	        }
+	
+	        function showSlides4(n) {
+	          var i;
+	          var slides4 = document.getElementsByClassName("mySlides4");
+	          var dots4 = document.getElementsByClassName("demo4");
+	          if (n > slides4.length) {
+	        	  	        	  slideIndex4 = 1
+	        	  }
+	          if (n < 1) {
+	        	  slideIndex4 = slides4.length  
+	          }
+	          for (i = 0; i < slides4.length; i++) {
+	              slides4[i].style.display = "none";
+	          }
+	          for (i = 0; i < dots4.length; i++) {
+	              dots4[i].className = dots4[i].className.replace(" active", "");
+	          }
+	          slides4[slideIndex4-1].style.display = "block";
+	          dots4[slideIndex4-1].className += " active";
+	        }
+        </script>
+        <script>
+	        var slideIndex5 = 1;
+	        showSlides5(slideIndex5);
+	
+	        function plusSlides5(n) {
+	          showSlides5(slideIndex5 += n);
+	        }
+	
+	        function currentSlide5(n) {
+	          showSlides5(slideIndex5 = n);
+	        }
+	
+	        function showSlides5(n) {
+	          var i;
+	          var slides5 = document.getElementsByClassName("mySlides5");
+	          var dots5 = document.getElementsByClassName("demo5");
+	          if (n > slides5.length) {
+	        	  	        	  slideIndex5 = 1
+	        	  }
+	          if (n < 1) {
+	        	  slideIndex5 = slides5.length  
+	          }
+	          for (i = 0; i < slides5.length; i++) {
+	              slides5[i].style.display = "none";
+	          }
+	          for (i = 0; i < dots5.length; i++) {
+	              dots5[i].className = dots5[i].className.replace(" active", "");
+	          }
+	          slides5[slideIndex5-1].style.display = "block";
+	          dots5[slideIndex5-1].className += " active";
+	        }
+        </script>
+    </body>
+</html>
