@@ -1157,11 +1157,11 @@
 			if(e.originalEvent.deltaY > 0) {
 				if(page == 2) return;
 				page++;
-			} else if(e.originalEvent.deltaY < 0) {
+			} /*else if(e.originalEvent.deltaY < 0) {
 				if(page == 1) return;
 				page--;
 			}
-			var posTop =(page-1) * $(window).height();
+			var posTop =(page-1) * $(window).height();*/
 			mHtml.animate({scrollTop : posTop});
 		})
 	</script>
