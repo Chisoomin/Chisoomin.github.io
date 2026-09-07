@@ -1052,18 +1052,26 @@
 							  </div>
 							</div>
 							<div style="float:left; width:455px;height:575px;margin-left:16px;overflow:scroll;">
-								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> ERP 영업관리 프로세스
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> '얼굴인식 + 3단계 연속 제스처' 인식을 활용한 2단계 생체인증, 파인튜닝한 제스처 인식 모델 기반 숫자 비밀번호 설정 및 기밀 문서 접근
 								<br><b>- 팀원수 :</b> 5명
-								<br><b>- 기여도 및 담당업무 :</b> 60%, PM을 맡아 소통을 통해 팀원들의 역할 조정과 기한 엄수를 하였고, 영업관리 프로세스 중 매출 관리 부분을 맡아 등록된 수주 목록을 불러와 매출로 분류하여 세금 계산서와 그래프로 매출 기록을 나타내는 부분을 담당
+								<br><b>- 기여도 및 담당업무 :</b> 60%, PM으로 프로젝트 기획, 일정과 역할 관리, 시연 영상 제작 및 발표를 진행하였고, Gesture Recognition을 파인튜닝하여 제스처로 숫자 비밀번호를 인식하도록 하여 기밀 문서 접근 기능을 구현
 								<br><b>- 소요시간 :</b> 5일
 								<br><b>- 사용언어 :</b> AI, Python, Streamlit, SQLite
 								<br><b>- GitHub :</b> <a href="https://github.com/soomni77/DeepGuard">https://github.com/soomni77/DeepGuard</a>
 								<br><b>- 시연영상 :</b> <a href="https://www.youtube.com/watch?v=i98j8H4gqMw">https://www.youtube.com/watch?v=i98j8H4gqMw</a></p>
 								<hr>
 								<p>
-									ERP는 enterprise resource planning의 약어로 경영 정보 시스템의 한 종류입니다.<br><br>
-									ERP는 전사적 자원 관리는 회사의 모든 정보 뿐만 아니라, 공급 사슬관리, 고객의 주문정보까지 포함하여 통합적으로 관리하는 시스템입니다.<br><br>
-									그 중에서도 영업관리 프로세스를 맡아 수주 등록부터 매출 관리까지 구현하였습니다. 기업에서 사용하는 경영 시스템을 직접 구현해 보았다는 것에서 가장 의미있는 작업물이었습니다.
+									① 얼굴인식 1차 인증<br>
+									face_recognition을 활용해 웹캠으로 사용자의 얼굴을 인식하고 등록된 사용자와 비교하여 1차 인증을 진행합니다.<br><br>
+									
+									② 제스처 2차 인증<br>
+									MediaPipe Gesture Recognizer를 활용해 손동작을 실시간으로 인식하고, 지정된 제스처를 3단계 순서대로 입력해야 인증이 완료되도록 구현했습니다.<br><br>
+									
+									③ 숫자 제스처 비밀번호를 통한 기밀 문서 접근<br>
+									MediaPipe Gesture Recognition을 파인튜닝하여 숫자 제스처를 인식하도록 확장하고, 사용자가 숫자 조합을 비밀번호로 설정할 수 있도록 구현했습니다. 설정된 숫자 제스처 비밀번호를 입력해야 기밀 문서에 접근할 수 있도록 구성했습니다.<br><br>
+									
+									④ 사용자 인터페이스<br>
+									Streamlit을 활용해 인증 단계와 제스처 인식 결과를 실시간으로 확인할 수 있도록 구성했습니다.
 								</p>
 								<button onclick = "location.href = 'https://github.com/soomni77/DeepGuard'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">README ▶</button>
 							</div>
@@ -1164,17 +1172,24 @@
 							  </div>
 							</div>
 							<div style="float:left; width:455px;height:575px;margin-left:16px;overflow:scroll;">
-								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> ERP 영업관리 프로세스
+								<p style="font-size:20px;word-break:break-all;"><b>- 주요기능 :</b> Gemini API 기반 보안 특화 AI 챗봇, 프롬프트 튜닝을 통한 비전문가 친화적 보안 답변 제공
 								<br><b>- 팀원수 :</b> 5명
-								<br><b>- 기여도 및 담당업무 :</b> 60%, PM을 맡아 소통을 통해 팀원들의 역할 조정과 기한 엄수를 하였고, 영업관리 프로세스 중 매출 관리 부분을 맡아 등록된 수주 목록을 불러와 매출로 분류하여 세금 계산서와 그래프로 매출 기록을 나타내는 부분을 담당
-								<br><b>- 소요시간 :</b> 5일
+								<br><b>- 기여도 및 담당업무 :</b> 50%, 보안 비전문가를 위한 서비스를 기획하였고, 웹 페이지 디자인 및 프롬프트 설계. 모바일 데모 버전 개발 및 프로젝트 시연 영상 제작.
 								<br><b>- 사용언어 :</b> AI, Python, JAVA, HTML/CSS, JS, XML
 								<br><b>- 시연영상 :</b> <a href="https://www.youtube.com/watch?v=rEguVP932eM">https://www.youtube.com/watch?v=rEguVP932eM</a></p>
 								<hr>
 								<p>
-									ERP는 enterprise resource planning의 약어로 경영 정보 시스템의 한 종류입니다.<br><br>
-									ERP는 전사적 자원 관리는 회사의 모든 정보 뿐만 아니라, 공급 사슬관리, 고객의 주문정보까지 포함하여 통합적으로 관리하는 시스템입니다.<br><br>
-									그 중에서도 영업관리 프로세스를 맡아 수주 등록부터 매출 관리까지 구현하였습니다. 기업에서 사용하는 경영 시스템을 직접 구현해 보았다는 것에서 가장 의미있는 작업물이었습니다.
+									① 보안 특화 AI 챗봇<br>
+									Gemini API를 활용하여 보안과 관련된 질문에 답변하는 AI 챗봇을 구현했습니다.<br><br>
+									
+									② 프롬프트 튜닝<br>
+									보안 전문가와 비전문가 간의 기술적 이해 차이를 줄이는 것을 목표로, 보안 용어와 개념을 비전문가도 이해하기 쉽게 설명하도록 프롬프트를 설계·튜닝했습니다.<br><br>
+									
+									③ 모바일 데모<br>
+									웹 기반 챗봇의 활용성을 보여주기 위해 모바일 환경의 데모 버전을 직접 구현하고 실제 서비스 형태로 시연했습니다.<br><br>
+									
+									④ 발표 및 시연 영상<br>
+									프로젝트의 기획 의도와 주요 기능을 설명하는 발표를 진행하고, 실제 사용 과정을 보여주는 시연 영상을 직접 제작했습니다.<br><br>
 								</p>
 								<button onclick = "location.href = 'https://www.youtube.com/watch?v=rEguVP932eM'" style="outline:none;border:none; border-radius:10px;width:140px; height:40px; background-color:#2B1700; color:white;">WATCHME ▶</button>
 							</div>
